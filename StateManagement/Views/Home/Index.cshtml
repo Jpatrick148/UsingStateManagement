@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@{
+    var Dogs = ViewBag.MyDogs;
+    var Cats = ViewBag.MyCats;
+    
+}
+<h2>View Data aka ViewBag with a Key</h2>
+<div>@ViewBag.MyDogs</div>
+
+<h2>You Flithy ViewBag</h2>
+<div>@ViewBag.MyCats</div>
+
+<h2> Cats List</h2>
+<ul>
+@foreach (var c in Cats)
+{
+    <li>@c</li>
+}
+    </ul>
+
+<h2>Dog List</h2>
+<ul>
+    @foreach(var i in Dogs)
+    {
+        <li>@i</li>
+    }
+
+</ul>
+
